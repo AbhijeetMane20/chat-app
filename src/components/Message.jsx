@@ -8,9 +8,9 @@ export default function Message({ text, user, photoURL }) {
       style={{ justifyContent: user === "me" ? "end" : "" }}
     >
       <div>
-        {user === "me" && <img src={userState.photoURL} />}
+        {user === "me" && <img src={userState.photoURL} alt=""/>}
         <label>{text} </label>
-        {user !== "me" && <img src={photoURL} />}
+        {user !== "me" && <img src={photoURL} alt=""/>}
       </div>
     </div>
   );
