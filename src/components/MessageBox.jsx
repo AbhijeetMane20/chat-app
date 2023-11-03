@@ -21,6 +21,7 @@ export default function MessageBox() {
           text: message,
           uid: user.uid,
           createdAt: serverTimestamp(),
+          photoURL: user.photoURL,
         });
       } catch (error) {
         alert(error);
