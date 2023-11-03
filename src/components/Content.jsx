@@ -43,7 +43,6 @@ export default function Content() {
         <Message
           text={message.text}
           user={message.uid === user.uid ? "me" : "other"}
-          photoURL={message.photoURL}
         />
       ))}
     </div>
